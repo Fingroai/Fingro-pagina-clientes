@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal de Clientes | Fingro</title>
+    <meta name="description" content="Portal exclusivo para clientes de Fingro. Accede a tu información, gestiona tus créditos y obtén soporte personalizado.">
+    <!-- SEO Meta Tags -->
+    <meta name="keywords" content="Fingro, portal clientes, cooperativas, crédito digital, fintech, acceso clientes">
+    <meta name="author" content="Fingro">
+    <meta property="og:title" content="Portal de Clientes | Fingro">
+    <meta property="og:description" content="Portal exclusivo para clientes de Fingro. Accede a tu información, gestiona tus créditos y obtén soporte personalizado.">
+    <meta property="og:image" content="https://fingroai.com/Fingro Logo (2).svg">
+    <meta property="og:url" content="https://clientes.fingroai.com">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Fingro - Portal de Clientes">
+    <!-- Favicon and App Icons -->
+    <link rel="icon" href="../Fingro Logo (2).svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="../Fingro Logo (2).svg">
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="client-header">
+        <div class="container">
+            <nav>
+                <div class="logo">
+                    <div class="logo-glow"></div>
+                    <a href="#">
+                        <img src="../Fingro Logo (2).svg" alt="Fingro Logo" class="logo-img">
+                    </a>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="#dashboard">Dashboard</a></li>
+                    <li><a href="#creditos">Mis Créditos</a></li>
+                    <li><a href="#documentos">Documentos</a></li>
+                    <li><a href="#soporte">Soporte</a></li>
+                </ul>
+                <div class="user-menu">
+                    <span class="user-name">Bienvenido, <strong>Cliente</strong></span>
+                    <div class="user-avatar">
+                        <i class="fas fa-user-circle"></i>
+                    </div>
+                </div>
+                <div class="mobile-menu">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section id="dashboard" class="dashboard-section">
+            <div class="container">
+                <h1>Bienvenido a tu Portal de Cliente</h1>
+                <p class="subtitle">Gestiona tus créditos y accede a información personalizada</p>
+                
+                <div class="dashboard-grid">
+                    <div class="dashboard-card">
+                        <div class="card-icon">
+                            <i class="fas fa-money-check-alt"></i>
+                        </div>
+                        <h3>Mis Créditos</h3>
+                        <p>Visualiza tus créditos activos, historial de pagos y próximos vencimientos.</p>
+                        <a href="#creditos" class="btn-secondary">Ver Créditos</a>
+                    </div>
+                    
+                    <div class="dashboard-card">
+                        <div class="card-icon">
+                            <i class="fas fa-file-invoice"></i>
+                        </div>
+                        <h3>Documentos</h3>
+                        <p>Accede a tus contratos, comprobantes y documentación importante.</p>
+                        <a href="#documentos" class="btn-secondary">Ver Documentos</a>
+                    </div>
+                    
+                    <div class="dashboard-card">
+                        <div class="card-icon">
+                            <i class="fas fa-headset"></i>
+                        </div>
+                        <h3>Soporte</h3>
+                        <p>Contacta con nuestro equipo para resolver tus dudas o incidencias.</p>
+                        <a href="#soporte" class="btn-secondary">Contactar</a>
+                    </div>
+                    
+                    <div class="dashboard-card">
+                        <div class="card-icon">
+                            <i class="fas fa-chart-pie"></i>
+                        </div>
+                        <h3>Métricas</h3>
+                        <p>Visualiza estadísticas sobre tu historial crediticio y actividad.</p>
+                        <a href="#metricas" class="btn-secondary">Ver Métricas</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Créditos Section -->
+        <section id="creditos" class="credits-section">
+            <div class="container">
+                <h2>Mis Créditos</h2>
+                <div class="credit-summary">
+                    <div class="summary-card">
+                        <h3>Crédito Activo</h3>
+                        <div class="credit-amount">Q 25,000.00</div>
+                        <div class="credit-details">
+                            <p><span>Fecha de inicio:</span> 15/01/2024</p>
+                            <p><span>Plazo:</span> 12 meses</p>
+                            <p><span>Tasa:</span> 12% anual</p>
+                            <p><span>Estado:</span> <span class="status active">Al día</span></p>
+                        </div>
+                        <a href="#" class="btn-primary">Ver detalles</a>
+                    </div>
+                </div>
+                
+                <div class="payment-history">
+                    <h3>Historial de Pagos</h3>
+                    <div class="table-responsive">
+                        <table class="payment-table">
+                            <thead>
+                                <tr>
+                                    <th>Fecha</th>
+                                    <th>Concepto</th>
+                                    <th>Monto</th>
+                                    <th>Estado</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>15/03/2024</td>
+                                    <td>Cuota 3/12</td>
+                                    <td>Q 2,350.00</td>
+                                    <td><span class="status paid">Pagado</span></td>
+                                </tr>
+                                <tr>
+                                    <td>15/02/2024</td>
+                                    <td>Cuota 2/12</td>
+                                    <td>Q 2,350.00</td>
+                                    <td><span class="status paid">Pagado</span></td>
+                                </tr>
+                                <tr>
+                                    <td>15/01/2024</td>
+                                    <td>Cuota 1/12</td>
+                                    <td>Q 2,350.00</td>
+                                    <td><span class="status paid">Pagado</span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Documentos Section -->
+        <section id="documentos" class="documents-section">
+            <div class="container">
+                <h2>Mis Documentos</h2>
+                <div class="documents-grid">
+                    <div class="document-card">
+                        <div class="document-icon">
+                            <i class="fas fa-file-contract"></i>
+                        </div>
+                        <div class="document-info">
+                            <h3>Contrato de Crédito</h3>
+                            <p>Crédito Personal - 15/01/2024</p>
+                        </div>
+                        <a href="#" class="btn-download">
+                            <i class="fas fa-download"></i>
+                        </a>
+                    </div>
+                    <div class="document-card">
+                        <div class="document-icon">
+                            <i class="fas fa-file-invoice-dollar"></i>
+                        </div>
+                        <div class="document-info">
+                            <h3>Plan de Pagos</h3>
+                            <p>Actualizado - 15/01/2024</p>
+                        </div>
+                        <a href="#" class="btn-download">
+                            <i class="fas fa-download"></i>
+                        </a>
+                    </div>
+                    <div class="document-card">
+                        <div class="document-icon">
+                            <i class="fas fa-file-alt"></i>
+                        </div>
+                        <div class="document-info">
+                            <h3>Términos y Condiciones</h3>
+                            <p>Versión 2.1 - 01/01/2024</p>
+                        </div>
+                        <a href="#" class="btn-download">
+                            <i class="fas fa-download"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Soporte Section -->
+        <section id="soporte" class="support-section">
+            <div class="container">
+                <h2>Soporte y Ayuda</h2>
+                <div class="support-grid">
+                    <div class="contact-form-container">
+                        <h3>Envíanos un mensaje</h3>
+                        <form class="support-form">
+                            <div class="form-group">
+                                <label for="subject">Asunto</label>
+                                <select id="subject" name="subject" required>
+                                    <option value="">Selecciona un asunto</option>
+                                    <option value="consulta">Consulta sobre mi crédito</option>
+                                    <option value="problema">Problema con la plataforma</option>
+                                    <option value="pagos">Consulta sobre pagos</option>
+                                    <option value="otro">Otro asunto</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Mensaje</label>
+                                <textarea id="message" name="message" rows="5" placeholder="Describe tu consulta o problema..." required></textarea>
+                            </div>
+                            <button type="submit" class="btn-primary">Enviar mensaje</button>
+                        </form>
+                    </div>
+                    <div class="contact-info">
+                        <h3>Contacto directo</h3>
+                        <div class="contact-method">
+                            <i class="fab fa-whatsapp"></i>
+                            <div>
+                                <h4>WhatsApp</h4>
+                                <p>+502 5302 3697</p>
+                                <a href="https://wa.me/50253023697" target="_blank" class="btn-secondary">Enviar mensaje</a>
+                            </div>
+                        </div>
+                        <div class="contact-method">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h4>Correo electrónico</h4>
+                                <p>soporte@fingroai.com</p>
+                                <a href="mailto:soporte@fingroai.com" class="btn-secondary">Enviar correo</a>
+                            </div>
+                        </div>
+                        <div class="contact-method">
+                            <i class="fas fa-phone-alt"></i>
+                            <div>
+                                <h4>Teléfono</h4>
+                                <p>+502 5302 3697</p>
+                                <a href="tel:+50253023697" class="btn-secondary">Llamar</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="faq-section">
+                    <h3>Preguntas frecuentes</h3>
+                    <div class="accordion">
+                        <div class="accordion-item">
+                            <div class="accordion-header">
+                                <h4>¿Cómo puedo realizar un pago anticipado?</h4>
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                            <div class="accordion-content">
+                                <p>Para realizar un pago anticipado, puedes contactar directamente con tu asesor o utilizar la opción "Realizar pago" en la sección de Mis Créditos. Recuerda que los pagos anticipados pueden reducir intereses futuros.</p>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <div class="accordion-header">
+                                <h4>¿Qué debo hacer si no puedo pagar una cuota a tiempo?</h4>
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                            <div class="accordion-content">
+                                <p>Es importante que te comuniques con nosotros antes del vencimiento. Podemos ofrecerte opciones de flexibilidad de pago para evitar cargos por mora y afectaciones a tu historial crediticio.</p>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <div class="accordion-header">
+                                <h4>¿Cómo puedo solicitar un nuevo crédito?</h4>
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                            <div class="accordion-content">
+                                <p>Si ya eres cliente con buen historial, puedes solicitar un nuevo crédito a través de la sección "Solicitar nuevo crédito" o contactando directamente con tu asesor para una evaluación personalizada.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="client-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="../Fingro Logo (2).svg" alt="Fingro Logo" class="logo-img">
+                    <p>Portal de Clientes</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Accesos rápidos</h4>
+                        <ul>
+                            <li><a href="#dashboard">Dashboard</a></li>
+                            <li><a href="#creditos">Mis Créditos</a></li>
+                            <li><a href="#documentos">Documentos</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Ayuda</h4>
+                        <ul>
+                            <li><a href="#soporte">Soporte</a></li>
+                            <li><a href="#preguntas-frecuentes">Preguntas frecuentes</a></li>
+                            <li><a href="https://fingroai.com">Sitio principal</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Fingro. Todos los derechos reservados.</p>
+                <div class="footer-legal">
+                    <a href="#privacy">Política de privacidad</a>
+                    <a href="#terms">Términos de uso</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+</body>
+</html> 
