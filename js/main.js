@@ -2,12 +2,12 @@ document.addEventListener('DOMContentLoaded', function() {
     // Mobile Menu Toggle
     const mobileMenuButton = document.querySelector('.mobile-menu');
     const navLinks = document.querySelector('.nav-links');
-    const userMenu = document.querySelector('.user-menu');
+    const ctaNav = document.querySelector('.cta-nav');
     
     if (mobileMenuButton) {
         mobileMenuButton.addEventListener('click', function() {
             navLinks.classList.toggle('active');
-            userMenu.classList.toggle('active');
+            if (ctaNav) ctaNav.classList.toggle('active');
             mobileMenuButton.classList.toggle('active');
             
             // Change icon when menu is active
@@ -20,6 +20,52 @@ document.addEventListener('DOMContentLoaded', function() {
                 icon.classList.add('fa-bars');
             }
         });
+    }
+    
+    // Testimonials Slider
+    const testimonialControls = document.querySelectorAll('.testimonial-controls .control');
+    const testimonials = document.querySelectorAll('.testimonial');
+    
+    if (testimonialControls.length > 0) {
+        testimonialControls.forEach(control => {
+            control.addEventListener('click', () => {
+                const index = parseInt(control.getAttribute('data-index'));
+                
+                // Update controls
+                testimonialControls.forEach(c => c.classList.remove('active'));
+                control.classList.add('active');
+                
+                // Update testimonials
+                testimonials.forEach(testimonial => testimonial.classList.remove('active'));
+                testimonials[index].classList.add('active');
+            });
+        });
+        
+        // Auto-rotate testimonials
+        let currentIndex = 0;
+        const rotateTestimonials = () => {
+            currentIndex = (currentIndex + 1) % testimonials.length;
+            testimonialControls.forEach(c => c.classList.remove('active'));
+            testimonialControls[currentIndex].classList.add('active');
+            testimonials.forEach(testimonial => testimonial.classList.remove('active'));
+            testimonials[currentIndex].classList.add('active');
+        };
+        
+        // Set interval for auto-rotation (7 seconds)
+        const intervalId = setInterval(rotateTestimonials, 7000);
+        
+        // Pause rotation when hovering over testimonials
+        const testimonialContainer = document.querySelector('.testimonial-container');
+        if (testimonialContainer) {
+            testimonialContainer.addEventListener('mouseenter', () => {
+                clearInterval(intervalId);
+            });
+            
+            testimonialContainer.addEventListener('mouseleave', () => {
+                clearInterval(intervalId);
+                intervalId = setInterval(rotateTestimonials, 7000);
+            });
+        }
     }
     
     // Accordion functionality for FAQ
@@ -57,7 +103,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 // Close mobile menu if it's open
                 if (navLinks.classList.contains('active')) {
                     navLinks.classList.remove('active');
-                    userMenu.classList.remove('active');
+                    if (ctaNav) ctaNav.classList.remove('active');
                     mobileMenuButton.classList.remove('active');
                     
                     const icon = mobileMenuButton.querySelector('i');
@@ -298,5 +344,62 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         `;
         document.head.appendChild(style);
+    }
+    
+    // Add animation to benefits cards
+    const benefitCards = document.querySelectorAll('.benefit-card');
+    if (benefitCards.length > 0) {
+        const animateBenefits = () => {
+            benefitCards.forEach((card, index) => {
+                if (isElementInViewport(card)) {
+                    setTimeout(() => {
+                        card.classList.add('animate');
+                    }, index * 150);
+                }
+            });
+        };
+        
+        // Initial check
+        animateBenefits();
+        
+        // Check on scroll
+        window.addEventListener('scroll', animateBenefits);
+        
+        // Add CSS for animation
+        const style = document.createElement('style');
+        style.textContent = `
+            .benefit-card {
+                opacity: 0;
+                transform: translateY(20px);
+                transition: opacity 0.5s ease, transform 0.5s ease;
+            }
+            
+            .benefit-card.animate {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        `;
+        document.head.appendChild(style);
+    }
+    
+    // WhatsApp click tracking
+    const whatsappButtons = document.querySelectorAll('a[href*="wa.me"]');
+    if (whatsappButtons.length > 0) {
+        whatsappButtons.forEach(button => {
+            button.addEventListener('click', function(e) {
+                console.log('WhatsApp button clicked');
+                // Here you can add analytics tracking
+                // Example: gtag('event', 'click', { 'event_category': 'WhatsApp', 'event_label': 'WhatsApp Click' });
+            });
+        });
+    }
+    
+    // Helper function to check if element is in viewport
+    function isElementInViewport(el) {
+        const rect = el.getBoundingClientRect();
+        return (
+            rect.top <= (window.innerHeight || document.documentElement.clientHeight) &&
+            rect.bottom >= 0
+        );
     }
 }); 

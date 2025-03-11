@@ -3,17 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portal de Clientes | Fingro</title>
-    <meta name="description" content="Portal exclusivo para clientes de Fingro. Accede a tu información, gestiona tus créditos y obtén soporte personalizado.">
+    <title>Fingro | Tu crédito rápido con tu cooperativa</title>
+    <meta name="description" content="Accede a financiamiento con tu cooperativa en minutos. Sin trámites largos, sin papeleo innecesario. Solicita tu crédito ahora.">
     <!-- SEO Meta Tags -->
-    <meta name="keywords" content="Fingro, portal clientes, cooperativas, crédito digital, fintech, acceso clientes">
+    <meta name="keywords" content="Fingro, cooperativas, crédito rápido, financiamiento, chatbot, WhatsApp, préstamos">
     <meta name="author" content="Fingro">
-    <meta property="og:title" content="Portal de Clientes | Fingro">
-    <meta property="og:description" content="Portal exclusivo para clientes de Fingro. Accede a tu información, gestiona tus créditos y obtén soporte personalizado.">
+    <meta property="og:title" content="Fingro | Tu crédito rápido con tu cooperativa">
+    <meta property="og:description" content="Accede a financiamiento con tu cooperativa en minutos. Sin trámites largos, sin papeleo innecesario.">
     <meta property="og:image" content="https://fingroai.com/Fingro Logo (2).svg">
     <meta property="og:url" content="https://clientes.fingroai.com">
     <meta property="og:type" content="website">
-    <meta property="og:site_name" content="Fingro - Portal de Clientes">
+    <meta property="og:site_name" content="Fingro - Créditos">
     <!-- Favicon and App Icons -->
     <link rel="icon" href="../Fingro Logo (2).svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="../Fingro Logo (2).svg">
@@ -24,7 +24,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
-<body>
+<body class="landing-page">
     <!-- Header -->
     <header class="client-header">
         <div class="container">
@@ -36,16 +36,13 @@
                     </a>
                 </div>
                 <ul class="nav-links">
-                    <li><a href="#dashboard">Dashboard</a></li>
-                    <li><a href="#creditos">Mis Créditos</a></li>
-                    <li><a href="#documentos">Documentos</a></li>
-                    <li><a href="#soporte">Soporte</a></li>
+                    <li><a href="#como-funciona">Cómo Funciona</a></li>
+                    <li><a href="#beneficios">Beneficios</a></li>
+                    <li><a href="#cooperativas">Cooperativas</a></li>
+                    <li><a href="#testimonios">Testimonios</a></li>
                 </ul>
-                <div class="user-menu">
-                    <span class="user-name">Bienvenido, <strong>Cliente</strong></span>
-                    <div class="user-avatar">
-                        <i class="fas fa-user-circle"></i>
-                    </div>
+                <div class="cta-nav">
+                    <a href="https://wa.me/50253023697" target="_blank" class="btn-primary">Solicitar Crédito Ahora</a>
                 </div>
                 <div class="mobile-menu">
                     <i class="fa-solid fa-bars"></i>
@@ -57,237 +54,173 @@
     <!-- Main Content -->
     <main>
         <!-- Hero Section -->
-        <section id="dashboard" class="dashboard-section">
+        <section id="hero" class="hero-section">
             <div class="container">
-                <h1>Bienvenido a tu Portal de Cliente</h1>
-                <p class="subtitle">Gestiona tus créditos y accede a información personalizada</p>
-                
-                <div class="dashboard-grid">
-                    <div class="dashboard-card">
-                        <div class="card-icon">
-                            <i class="fas fa-money-check-alt"></i>
+                <div class="hero-content">
+                    <h1>Tu crédito rápido y sin complicaciones con tu cooperativa</h1>
+                    <p class="hero-subtitle">Accede a financiamiento con tu cooperativa en minutos. Sin trámites largos, sin papeleo innecesario.</p>
+                    <div class="hero-features">
+                        <div class="feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Aprobación rápida</span>
                         </div>
-                        <h3>Mis Créditos</h3>
-                        <p>Visualiza tus créditos activos, historial de pagos y próximos vencimientos.</p>
-                        <a href="#creditos" class="btn-secondary">Ver Créditos</a>
+                        <div class="feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Cero burocracia</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Todo desde WhatsApp</span>
+                        </div>
                     </div>
-                    
-                    <div class="dashboard-card">
-                        <div class="card-icon">
-                            <i class="fas fa-file-invoice"></i>
-                        </div>
-                        <h3>Documentos</h3>
-                        <p>Accede a tus contratos, comprobantes y documentación importante.</p>
-                        <a href="#documentos" class="btn-secondary">Ver Documentos</a>
+                    <div class="hero-cta">
+                        <a href="https://wa.me/50253023697" target="_blank" class="btn-primary">Solicitar Crédito Ahora</a>
                     </div>
-                    
-                    <div class="dashboard-card">
-                        <div class="card-icon">
-                            <i class="fas fa-headset"></i>
-                        </div>
-                        <h3>Soporte</h3>
-                        <p>Contacta con nuestro equipo para resolver tus dudas o incidencias.</p>
-                        <a href="#soporte" class="btn-secondary">Contactar</a>
+                </div>
+                <div class="hero-image">
+                    <img src="https://images.unsplash.com/photo-1579621970795-87facc2f976d?w=600&auto=format&fit=crop&q=80" alt="Persona usando WhatsApp para solicitar crédito" class="rounded-image">
+                </div>
+            </div>
+        </section>
+
+        <!-- Cómo Funciona Section -->
+        <section id="como-funciona" class="process-section">
+            <div class="container">
+                <h2>Cómo Funciona</h2>
+                <p class="section-subtitle">Acceder a crédito con tu cooperativa es fácil con Fingro. Solo sigue estos pasos:</p>
+                <div class="process-steps">
+                    <div class="step">
+                        <div class="step-number">1</div>
+                        <h3>Busca tu cooperativa</h3>
+                        <p>Selecciona la cooperativa con la que deseas obtener tu financiamiento.</p>
                     </div>
-                    
-                    <div class="dashboard-card">
-                        <div class="card-icon">
-                            <i class="fas fa-chart-pie"></i>
+                    <div class="step">
+                        <div class="step-number">2</div>
+                        <h3>Aplica por WhatsApp</h3>
+                        <p>Responde unas simples preguntas a través de nuestro Chatbot de WhatsApp.</p>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">3</div>
+                        <h3>Obtén respuesta rápida</h3>
+                        <p>Recibe una decisión ágil y accede a tu financiamiento sin complicaciones.</p>
+                    </div>
+                </div>
+                <div class="section-cta">
+                    <a href="https://wa.me/50253023697" target="_blank" class="btn-primary">Iniciar Proceso</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Beneficios Section -->
+        <section id="beneficios" class="benefits-section">
+            <div class="container">
+                <h2>Beneficios de Fingro</h2>
+                <div class="benefits-grid">
+                    <div class="benefit-card">
+                        <i class="fas fa-bolt"></i>
+                        <h3>Aprobación rápida</h3>
+                        <p>Decisiones más ágiles que en los procesos tradicionales de crédito. Respuestas en minutos, no en días.</p>
+                    </div>
+                    <div class="benefit-card">
+                        <i class="fas fa-file-alt"></i>
+                        <h3>Cero burocracia</h3>
+                        <p>Todo el proceso desde WhatsApp, sin filas ni papeleo. Olvídate de los trámites complicados.</p>
+                    </div>
+                    <div class="benefit-card">
+                        <i class="fas fa-shield-alt"></i>
+                        <h3>Transparencia total</h3>
+                        <p>Trabajamos con cooperativas serias y seguras. Conoce todos los términos antes de aceptar.</p>
+                    </div>
+                </div>
+                <div class="section-cta">
+                    <a href="https://wa.me/50253023697" target="_blank" class="btn-primary">Solicitar Crédito Ahora</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Cooperativas Section -->
+        <section id="cooperativas" class="cooperatives-section">
+            <div class="container">
+                <h2>Cooperativas Aliadas</h2>
+                <p class="section-subtitle">Trabajamos con las cooperativas más confiables para ofrecerte las mejores opciones de financiamiento.</p>
+                <div class="logos-grid">
+                    <div class="logo-card">
+                        <div class="coop-logo placeholder-logo">
+                            <span>Cooperativa 1</span>
                         </div>
-                        <h3>Métricas</h3>
-                        <p>Visualiza estadísticas sobre tu historial crediticio y actividad.</p>
-                        <a href="#metricas" class="btn-secondary">Ver Métricas</a>
+                    </div>
+                    <div class="logo-card">
+                        <div class="coop-logo placeholder-logo">
+                            <span>Cooperativa 2</span>
+                        </div>
+                    </div>
+                    <div class="logo-card">
+                        <div class="coop-logo placeholder-logo">
+                            <span>Cooperativa 3</span>
+                        </div>
+                    </div>
+                    <div class="logo-card">
+                        <div class="coop-logo placeholder-logo">
+                            <span>Cooperativa 4</span>
+                        </div>
+                    </div>
+                </div>
+                <p class="trust-message">Fingro es tu puente con las cooperativas para acceder a crédito sin complicaciones.</p>
+            </div>
+        </section>
+
+        <!-- Testimonios Section -->
+        <section id="testimonios" class="testimonials-section">
+            <div class="container">
+                <h2>Lo que dicen nuestros clientes</h2>
+                <div class="testimonials-slider">
+                    <div class="testimonial-container">
+                        <div class="testimonial active">
+                            <p>"Solicité mi crédito por WhatsApp y en menos de 24 horas ya tenía el dinero en mi cuenta. ¡Increíble servicio!"</p>
+                            <div class="author">
+                                <div class="author-avatar">MG</div>
+                                <div class="author-info">
+                                    <strong>María González</strong>
+                                    <span>Cliente satisfecha</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial">
+                            <p>"Lo que más me gustó fue la transparencia. Desde el principio supe las condiciones y no hubo sorpresas."</p>
+                            <div class="author">
+                                <div class="author-avatar">CR</div>
+                                <div class="author-info">
+                                    <strong>Carlos Rodríguez</strong>
+                                    <span>Cliente financiado</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial">
+                            <p>"Increíble no tener que hacer filas ni llevar papeles. Todo desde mi celular con WhatsApp. Así debería ser siempre."</p>
+                            <div class="author">
+                                <div class="author-avatar">AM</div>
+                                <div class="author-info">
+                                    <strong>Ana Martínez</strong>
+                                    <span>Cliente recurrente</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-controls">
+                        <button class="control active" data-index="0"></button>
+                        <button class="control" data-index="1"></button>
+                        <button class="control" data-index="2"></button>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Créditos Section -->
-        <section id="creditos" class="credits-section">
+        <!-- Final CTA Section -->
+        <section id="final-cta" class="final-cta-section">
             <div class="container">
-                <h2>Mis Créditos</h2>
-                <div class="credit-summary">
-                    <div class="summary-card">
-                        <h3>Crédito Activo</h3>
-                        <div class="credit-amount">Q 25,000.00</div>
-                        <div class="credit-details">
-                            <p><span>Fecha de inicio:</span> 15/01/2024</p>
-                            <p><span>Plazo:</span> 12 meses</p>
-                            <p><span>Tasa:</span> 12% anual</p>
-                            <p><span>Estado:</span> <span class="status active">Al día</span></p>
-                        </div>
-                        <a href="#" class="btn-primary">Ver detalles</a>
-                    </div>
-                </div>
-                
-                <div class="payment-history">
-                    <h3>Historial de Pagos</h3>
-                    <div class="table-responsive">
-                        <table class="payment-table">
-                            <thead>
-                                <tr>
-                                    <th>Fecha</th>
-                                    <th>Concepto</th>
-                                    <th>Monto</th>
-                                    <th>Estado</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>15/03/2024</td>
-                                    <td>Cuota 3/12</td>
-                                    <td>Q 2,350.00</td>
-                                    <td><span class="status paid">Pagado</span></td>
-                                </tr>
-                                <tr>
-                                    <td>15/02/2024</td>
-                                    <td>Cuota 2/12</td>
-                                    <td>Q 2,350.00</td>
-                                    <td><span class="status paid">Pagado</span></td>
-                                </tr>
-                                <tr>
-                                    <td>15/01/2024</td>
-                                    <td>Cuota 1/12</td>
-                                    <td>Q 2,350.00</td>
-                                    <td><span class="status paid">Pagado</span></td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Documentos Section -->
-        <section id="documentos" class="documents-section">
-            <div class="container">
-                <h2>Mis Documentos</h2>
-                <div class="documents-grid">
-                    <div class="document-card">
-                        <div class="document-icon">
-                            <i class="fas fa-file-contract"></i>
-                        </div>
-                        <div class="document-info">
-                            <h3>Contrato de Crédito</h3>
-                            <p>Crédito Personal - 15/01/2024</p>
-                        </div>
-                        <a href="#" class="btn-download">
-                            <i class="fas fa-download"></i>
-                        </a>
-                    </div>
-                    <div class="document-card">
-                        <div class="document-icon">
-                            <i class="fas fa-file-invoice-dollar"></i>
-                        </div>
-                        <div class="document-info">
-                            <h3>Plan de Pagos</h3>
-                            <p>Actualizado - 15/01/2024</p>
-                        </div>
-                        <a href="#" class="btn-download">
-                            <i class="fas fa-download"></i>
-                        </a>
-                    </div>
-                    <div class="document-card">
-                        <div class="document-icon">
-                            <i class="fas fa-file-alt"></i>
-                        </div>
-                        <div class="document-info">
-                            <h3>Términos y Condiciones</h3>
-                            <p>Versión 2.1 - 01/01/2024</p>
-                        </div>
-                        <a href="#" class="btn-download">
-                            <i class="fas fa-download"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Soporte Section -->
-        <section id="soporte" class="support-section">
-            <div class="container">
-                <h2>Soporte y Ayuda</h2>
-                <div class="support-grid">
-                    <div class="contact-form-container">
-                        <h3>Envíanos un mensaje</h3>
-                        <form class="support-form">
-                            <div class="form-group">
-                                <label for="subject">Asunto</label>
-                                <select id="subject" name="subject" required>
-                                    <option value="">Selecciona un asunto</option>
-                                    <option value="consulta">Consulta sobre mi crédito</option>
-                                    <option value="problema">Problema con la plataforma</option>
-                                    <option value="pagos">Consulta sobre pagos</option>
-                                    <option value="otro">Otro asunto</option>
-                                </select>
-                            </div>
-                            <div class="form-group">
-                                <label for="message">Mensaje</label>
-                                <textarea id="message" name="message" rows="5" placeholder="Describe tu consulta o problema..." required></textarea>
-                            </div>
-                            <button type="submit" class="btn-primary">Enviar mensaje</button>
-                        </form>
-                    </div>
-                    <div class="contact-info">
-                        <h3>Contacto directo</h3>
-                        <div class="contact-method">
-                            <i class="fab fa-whatsapp"></i>
-                            <div>
-                                <h4>WhatsApp</h4>
-                                <p>+502 5302 3697</p>
-                                <a href="https://wa.me/50253023697" target="_blank" class="btn-secondary">Enviar mensaje</a>
-                            </div>
-                        </div>
-                        <div class="contact-method">
-                            <i class="fas fa-envelope"></i>
-                            <div>
-                                <h4>Correo electrónico</h4>
-                                <p>soporte@fingroai.com</p>
-                                <a href="mailto:soporte@fingroai.com" class="btn-secondary">Enviar correo</a>
-                            </div>
-                        </div>
-                        <div class="contact-method">
-                            <i class="fas fa-phone-alt"></i>
-                            <div>
-                                <h4>Teléfono</h4>
-                                <p>+502 5302 3697</p>
-                                <a href="tel:+50253023697" class="btn-secondary">Llamar</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="faq-section">
-                    <h3>Preguntas frecuentes</h3>
-                    <div class="accordion">
-                        <div class="accordion-item">
-                            <div class="accordion-header">
-                                <h4>¿Cómo puedo realizar un pago anticipado?</h4>
-                                <i class="fas fa-chevron-down"></i>
-                            </div>
-                            <div class="accordion-content">
-                                <p>Para realizar un pago anticipado, puedes contactar directamente con tu asesor o utilizar la opción "Realizar pago" en la sección de Mis Créditos. Recuerda que los pagos anticipados pueden reducir intereses futuros.</p>
-                            </div>
-                        </div>
-                        <div class="accordion-item">
-                            <div class="accordion-header">
-                                <h4>¿Qué debo hacer si no puedo pagar una cuota a tiempo?</h4>
-                                <i class="fas fa-chevron-down"></i>
-                            </div>
-                            <div class="accordion-content">
-                                <p>Es importante que te comuniques con nosotros antes del vencimiento. Podemos ofrecerte opciones de flexibilidad de pago para evitar cargos por mora y afectaciones a tu historial crediticio.</p>
-                            </div>
-                        </div>
-                        <div class="accordion-item">
-                            <div class="accordion-header">
-                                <h4>¿Cómo puedo solicitar un nuevo crédito?</h4>
-                                <i class="fas fa-chevron-down"></i>
-                            </div>
-                            <div class="accordion-content">
-                                <p>Si ya eres cliente con buen historial, puedes solicitar un nuevo crédito a través de la sección "Solicitar nuevo crédito" o contactando directamente con tu asesor para una evaluación personalizada.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                <h2>Empieza hoy. Solicita tu crédito en minutos desde WhatsApp.</h2>
+                <p>Financiamiento rápido, transparente y sin complicaciones a través de tu cooperativa.</p>
+                <a href="https://wa.me/50253023697" target="_blank" class="btn-primary cta-large">Solicitar Crédito Ahora</a>
             </div>
         </section>
     </main>
@@ -298,22 +231,22 @@
             <div class="footer-content">
                 <div class="footer-logo">
                     <img src="../Fingro Logo (2).svg" alt="Fingro Logo" class="logo-img">
-                    <p>Portal de Clientes</p>
+                    <p>Tu puente hacia el financiamiento</p>
                 </div>
                 <div class="footer-links">
                     <div class="footer-column">
-                        <h4>Accesos rápidos</h4>
+                        <h4>Secciones</h4>
                         <ul>
-                            <li><a href="#dashboard">Dashboard</a></li>
-                            <li><a href="#creditos">Mis Créditos</a></li>
-                            <li><a href="#documentos">Documentos</a></li>
+                            <li><a href="#como-funciona">Cómo Funciona</a></li>
+                            <li><a href="#beneficios">Beneficios</a></li>
+                            <li><a href="#cooperativas">Cooperativas</a></li>
                         </ul>
                     </div>
                     <div class="footer-column">
-                        <h4>Ayuda</h4>
+                        <h4>Contáctanos</h4>
                         <ul>
-                            <li><a href="#soporte">Soporte</a></li>
-                            <li><a href="#preguntas-frecuentes">Preguntas frecuentes</a></li>
+                            <li><a href="https://wa.me/50253023697" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp</a></li>
+                            <li><a href="mailto:contacto@fingroai.com"><i class="fas fa-envelope"></i> Email</a></li>
                             <li><a href="https://fingroai.com">Sitio principal</a></li>
                         </ul>
                     </div>
@@ -328,6 +261,11 @@
             </div>
         </div>
     </footer>
+
+    <!-- WhatsApp Float Button -->
+    <a href="https://wa.me/50253023697" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
 
     <!-- Scripts -->
     <script src="js/main.js"></script>
