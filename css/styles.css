@@ -4,8 +4,8 @@
     --white: #FFFFFF;
     --blue-neon: #00AEEF;
     --green-neon: #39FF14;
-    --light-gray: #222222;  /* Gris oscuro para fondos secundarios */
-    --dark-gray: #EEEEEE;   /* Gris claro para textos principales */
+    --light-gray: #EEEEEE;  /* Corrección: Gris claro para fondos secundarios */
+    --dark-gray: #222222;   /* Corrección: Gris oscuro para textos principales */
     --medium-gray: #AAAAAA; /* Gris medio para textos secundarios */
     --bg-primary: var(--black);
     --text-primary: var(--white);
