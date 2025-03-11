@@ -4,14 +4,15 @@
     --white: #FFFFFF;
     --blue-neon: #00AEEF;
     --green-neon: #39FF14;
-    --light-gray: #EEEEEE;
+    --light-gray: #f0f0f0;
     --dark-gray: #222222;
     --medium-gray: #AAAAAA;
     --accent-color: #00AEEF;
-    --bg-primary: #0A0A0A;
+    --bg-primary: #050505;
     --text-primary: var(--white);
-    --text-secondary: var(--medium-gray);
-    --card-bg: #111111;
+    --text-secondary: #cdcdcd;
+    --card-bg: #101010;
+    --card-bg-hover: #151515;
     --gradient-primary: linear-gradient(135deg, var(--blue-neon), var(--green-neon));
     --gradient-button: linear-gradient(135deg, #00AEEF, #00C8FF);
     --shadow-sm: 0 2px 8px rgba(0, 174, 239, 0.2);
@@ -58,6 +59,7 @@ h1 {
     background: var(--gradient-primary);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    background-clip: text;
     margin-bottom: 30px;
     line-height: 1.2;
     text-shadow: 0 2px 10px rgba(0, 174, 239, 0.3);
@@ -89,7 +91,8 @@ h3 {
 
 p {
     margin-bottom: 20px;
-    color: var(--light-gray);
+    color: var(--text-secondary);
+    font-size: 1.05rem;
 }
 
 a {
@@ -102,6 +105,7 @@ section {
     padding: var(--section-padding);
     position: relative;
     overflow: hidden;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.03);
 }
 
 section:nth-child(even) {
@@ -131,6 +135,7 @@ img {
     overflow: hidden;
     box-shadow: var(--shadow-md);
     z-index: 1;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
 }
 
 .btn-primary:before {
@@ -194,8 +199,8 @@ header.sticky-header {
     position: fixed;
     top: 0;
     left: 0;
-    background: rgba(0, 0, 0, 0.95);
-    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
+    background: rgba(5, 5, 5, 0.95);
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.3);
     backdrop-filter: blur(10px);
     padding: 15px 0;
     animation: slideDown 0.5s forwards;
@@ -307,7 +312,7 @@ nav {
 .hero-section {
     padding: 180px 0 100px;
     position: relative;
-    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(10,10,10,1) 100%);
+    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(5,5,5,1) 100%);
     text-align: center;
 }
 
@@ -331,7 +336,7 @@ nav {
 
 .hero-subtitle {
     font-size: 1.25rem;
-    color: var(--light-gray);
+    color: var(--text-secondary);
     margin-bottom: 40px;
     max-width: 700px;
     margin-left: auto;
@@ -349,7 +354,7 @@ nav {
 .feature {
     display: flex;
     align-items: center;
-    background: rgba(17, 17, 17, 0.6);
+    background: rgba(10, 10, 10, 0.8);
     border: 1px solid rgba(255, 255, 255, 0.05);
     padding: 15px 25px;
     border-radius: 50px;
@@ -361,6 +366,7 @@ nav {
     transform: translateY(-5px);
     box-shadow: var(--shadow-sm);
     border-color: rgba(0, 174, 239, 0.3);
+    background: rgba(15, 15, 15, 0.8);
 }
 
 .feature i {
@@ -371,6 +377,7 @@ nav {
 
 .feature span {
     font-size: 0.95rem;
+    color: var(--white);
 }
 
 .hero-cta {
@@ -379,7 +386,7 @@ nav {
 
 /* Process Section */
 .process-section {
-    background-color: #0D0D0D;
+    background-color: #070707;
     position: relative;
     padding: 120px 0;
 }
@@ -391,7 +398,7 @@ nav {
     height: 100%;
     top: 0;
     left: 0;
-    background: radial-gradient(circle at 10% 10%, rgba(0, 174, 239, 0.15), transparent 40%);
+    background: radial-gradient(circle at 10% 10%, rgba(0, 174, 239, 0.12), transparent 40%);
     z-index: 0;
 }
 
@@ -399,7 +406,7 @@ nav {
     text-align: center;
     max-width: 700px;
     margin: 0 auto 60px;
-    color: var(--white);
+    color: var(--text-secondary);
     font-size: 1.1rem;
 }
 
@@ -412,7 +419,7 @@ nav {
 }
 
 .step {
-    background: rgba(17, 17, 17, 0.8);
+    background: rgba(15, 15, 15, 0.9);
     border-radius: var(--border-radius);
     padding: 40px 30px;
     position: relative;
@@ -423,13 +430,14 @@ nav {
     transition: var(--transition);
     border: 1px solid rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(8px);
-    box-shadow: var(--shadow-sm);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
 }
 
 .step:hover {
     transform: translateY(-10px);
-    box-shadow: var(--shadow-md);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
     border-color: rgba(0, 174, 239, 0.2);
+    background: rgba(20, 20, 20, 0.9);
 }
 
 .step-number {
@@ -456,14 +464,14 @@ nav {
 }
 
 .step p {
-    color: var(--light-gray);
+    color: var(--text-secondary);
     font-size: 1rem;
     margin: 0;
 }
 
 /* Benefits Section */
 .benefits-section {
-    background-color: #0C0C0C;
+    background-color: #050505;
     position: relative;
     padding: 120px 0;
     overflow: hidden;
@@ -489,14 +497,14 @@ nav {
 }
 
 .benefit-card {
-    background: rgba(17, 17, 17, 0.7);
+    background: rgba(15, 15, 15, 0.9);
     border-radius: var(--border-radius);
     padding: 40px 30px;
     text-align: center;
     transition: var(--transition);
     position: relative;
     overflow: hidden;
-    box-shadow: var(--shadow-sm);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
     border: 1px solid rgba(255, 255, 255, 0.05);
     backdrop-filter: blur(8px);
 }
@@ -516,8 +524,9 @@ nav {
 
 .benefit-card:hover {
     transform: translateY(-10px);
-    box-shadow: var(--shadow-md);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
     border-color: rgba(0, 174, 239, 0.2);
+    background: rgba(20, 20, 20, 0.9);
 }
 
 .benefit-card:hover::before {
@@ -529,6 +538,7 @@ nav {
     background: var(--gradient-primary);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    background-clip: text;
     margin-bottom: 25px;
     display: inline-block;
     transition: var(--transition);
@@ -559,14 +569,14 @@ nav {
 }
 
 .benefit-card p {
-    color: var(--medium-gray);
+    color: var(--text-secondary);
     font-size: 1rem;
     line-height: 1.6;
 }
 
 /* Cooperatives Section */
 .cooperatives-section {
-    background-color: #0A0A0A;
+    background-color: #070707;
     position: relative;
     padding: var(--section-padding);
 }
@@ -578,7 +588,7 @@ nav {
     height: 100%;
     top: 0;
     left: 0;
-    background: radial-gradient(circle at 30% 50%, rgba(0, 174, 239, 0.15), transparent 50%);
+    background: radial-gradient(circle at 30% 50%, rgba(0, 174, 239, 0.12), transparent 50%);
     z-index: 0;
 }
 
@@ -600,21 +610,21 @@ nav {
 .coop-logo {
     width: 100%;
     height: 140px;
-    background: rgba(25, 25, 25, 0.9);
+    background: rgba(20, 20, 20, 0.95);
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: var(--border-radius);
     border: 1px solid rgba(255, 255, 255, 0.1);
     transition: var(--transition);
-    backdrop-filter: blur(8px);
-    box-shadow: var(--shadow-sm);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
 }
 
 .coop-logo:hover {
     transform: translateY(-5px);
-    box-shadow: var(--shadow-md);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
     border-color: rgba(0, 174, 239, 0.2);
+    background: rgba(25, 25, 25, 0.95);
 }
 
 .placeholder-logo {
@@ -627,7 +637,7 @@ nav {
     text-align: center;
     max-width: 700px;
     margin: 40px auto 0;
-    color: var(--white);
+    color: var(--text-secondary);
     font-size: 1.1rem;
     position: relative;
     z-index: 1;
@@ -635,7 +645,7 @@ nav {
 
 /* Testimonials Section */
 .testimonials-section {
-    background-color: #0A0A0A;
+    background-color: #050505;
     padding: 120px 0;
     position: relative;
 }
@@ -660,11 +670,11 @@ nav {
 }
 
 .testimonial {
-    background: rgba(17, 17, 17, 0.7);
+    background: rgba(15, 15, 15, 0.95);
     border-radius: var(--border-radius);
     padding: 40px;
     text-align: center;
-    box-shadow: var(--shadow-sm);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
     opacity: 0;
     position: absolute;
     top: 0;
@@ -673,7 +683,6 @@ nav {
     transition: all 0.5s ease;
     transform: translateY(20px);
     border: 1px solid rgba(255, 255, 255, 0.05);
-    backdrop-filter: blur(8px);
 }
 
 .testimonial.active {
@@ -683,7 +692,7 @@ nav {
 
 .testimonial p {
     font-size: 1.2rem;
-    color: var(--light-gray);
+    color: var(--text-secondary);
     font-style: italic;
     margin-bottom: 30px;
     position: relative;
@@ -726,6 +735,7 @@ nav {
     color: var(--white);
     font-weight: 600;
     font-size: 1.2rem;
+    box-shadow: 0 4px 15px rgba(0, 174, 239, 0.3);
 }
 
 .author-info {
@@ -770,7 +780,7 @@ nav {
 /* Final CTA Section */
 .final-cta-section {
     padding: 100px 0;
-    background: linear-gradient(135deg, rgba(0,0,0,0.9) 0%, rgba(17,17,17,0.9) 100%);
+    background: linear-gradient(135deg, rgba(7,7,7,0.95) 0%, rgba(15,15,15,0.95) 100%);
     position: relative;
     text-align: center;
 }
@@ -798,7 +808,7 @@ nav {
 }
 
 .final-cta-section p {
-    color: var(--medium-gray);
+    color: var(--text-secondary);
     margin-bottom: 40px;
     font-size: 1.1rem;
     max-width: 600px;
@@ -818,16 +828,16 @@ nav {
 /* Contact Form */
 .contact-section {
     padding: var(--section-padding);
-    background: var(--bg-primary);
+    background: #050505;
 }
 
 .contact-form {
     max-width: 600px;
     margin: 0 auto;
-    background: var(--card-bg);
+    background: rgba(15, 15, 15, 0.95);
     padding: var(--card-padding);
     border-radius: var(--border-radius);
-    box-shadow: var(--shadow-sm);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
     border: 1px solid rgba(255, 255, 255, 0.05);
 }
 
@@ -871,7 +881,7 @@ nav {
 
 /* Footer */
 .client-footer {
-    background-color: #070707;
+    background-color: #030303;
     color: var(--light-gray);
     padding: 80px 0 30px;
     position: relative;
@@ -1039,7 +1049,7 @@ nav {
 }
 
 .modal-container {
-    background: var(--card-bg);
+    background: rgba(15, 15, 15, 0.95);
     border-radius: var(--border-radius);
     width: 90%;
     max-width: 500px;
@@ -1047,7 +1057,7 @@ nav {
     overflow-y: auto;
     padding: 30px;
     position: relative;
-    box-shadow: var(--shadow-lg);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
     transform: scale(0.9);
     transition: transform 0.3s ease;
     border: 1px solid rgba(255, 255, 255, 0.05);
@@ -1068,7 +1078,7 @@ nav {
 }
 
 .modal-close:hover {
-    color: var(--dark-gray);
+    color: var(--light-gray);
 }
 
 .modal-header {
